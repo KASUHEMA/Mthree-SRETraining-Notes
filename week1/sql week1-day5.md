@@ -385,6 +385,14 @@ history
 ```
 
 ---
+![image](https://github.com/user-attachments/assets/838ce7f1-6db6-4aef-a451-a32401dd78a5)
+![image](https://github.com/user-attachments/assets/d30bafae-5342-468e-8e1c-68adcce4e601)
+![image](https://github.com/user-attachments/assets/b9593878-602d-4828-aff6-74fa5d5cff48)
+![image](https://github.com/user-attachments/assets/b88e6061-6e05-412c-abc8-385608a21863)
+![image](https://github.com/user-attachments/assets/35a62422-944a-4d5e-be53-86ff2e3f04bc)
+![image](https://github.com/user-attachments/assets/652c51db-3b6d-4c22-87ad-7ba3bd3d222f)
+
+
 
 ## Conclusion
 - The key steps include initializing a Git repo, configuring user details, committing changes, pushing to the remote repository, creating and switching between branches, and handling merges.
