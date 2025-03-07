@@ -96,13 +96,17 @@
   ![image](https://github.com/user-attachments/assets/27059689-f760-4e2f-8055-179e011e384d)
 
 
+
 ## 7. Shell Scripting and Variables
 
 ### Create a Shell Script:
 - `vi script.sh` – Opens the shell script for editing.
 - `chmod +x script.sh` – Makes the script executable.
 - `./script.sh` – Executes the script.
+  
 ![image](https://github.com/user-attachments/assets/5f68daa6-1862-42d2-8e81-5e2f07176651)
+
+
 ![image](https://github.com/user-attachments/assets/804771d9-0acc-4c45-9603-455236a103c4)
 
 ## 8. Loops and Conditionals
