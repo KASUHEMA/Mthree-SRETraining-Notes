@@ -1,10 +1,10 @@
-**SQL Learning Report – Day 2( 11-02-2025)**
+# **SQL Learning Report – Day 2( 11-02-2025)**
 
-***1\. Bitwise Operations***
+## **1\. Bitwise Operations**
 
 Bitwise operations manipulate data at the binary level. They are useful for managing permissions, flags, and optimizing certain calculations.
 
-- **Key Operators:**
+##  **Key Operators:**
   - | (OR): Sets a bit if it's set in either operand.
   - & (AND): Sets a bit only if it's set in both operands.
   - ^ (XOR): Sets a bit if it's set in either operand, but not both.
@@ -17,19 +17,19 @@ Bitwise operations manipulate data at the binary level. They are useful for mana
 | Write | 010 | 2   |
 | Execute | 001 | 1   |
 
-- **Queries:**
+##  **Queries:**
   - Add Write Permission: UPDATE permissions SET permission_flags = permission_flags | 2 WHERE (permission_flags & 2) = 0;
   - Toggle Execute Permission: UPDATE permissions SET permission_flags = permission_flags ^ 1;
   - Check Read Permission: SELECT user_id, username, CASE WHEN (permission_flags & 4) > 0 THEN 'Has Read Permission' ELSE 'No Read Permission' END AS ReadPermissionStatus FROM permissions;
 
-**2\. Bit Shifting Operations**
+## **2\. Bit Shifting Operations**
 
 Bit shifting efficiently multiplies or divides by powers of 2.
 
 - **Operators:**
   - << (Left Shift): Multiplies by 2 for each shift.
   - \>> (Right Shift): Divides by 2 for each shift.
-- **Example:**
+## - **Example:**
 
 | **Value** | **Binary** | **<< 1** | **Binary** | **<< 2** | **Binary** | **\>> 1** | **Binary** | **\>> 2** | **Binary** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ Bit shifting efficiently multiplies or divides by powers of 2.
 | 12  | 1100 | 24  | 11000 | 48  | 110000 | 6   | 0110 | 3   | 0011 |
 | 16  | 10000 | 32  | 100000 | 64  | 1000000 | 8   | 01000 | 4   | 00100 |
 
-**3\. SQL Clauses (NOT, BETWEEN, EXISTS)**
+## **3\. SQL Clauses (NOT, BETWEEN, EXISTS)**
 
 These clauses filter data based on specific conditions.
 
@@ -45,7 +45,7 @@ These clauses filter data based on specific conditions.
 - BETWEEN: Filters values within a range. SELECT \* FROM Orders WHERE TotalAmount BETWEEN 1000 AND 2000;
 - EXISTS: Checks for the existence of records in a subquery. SELECT Name FROM Customers C WHERE EXISTS (SELECT 1 FROM Orders O WHERE O.CustomerID = C.CustomerID); (Finds customers with at least one order).
 
-**4\. SQL Joins**
+## **4\. SQL Joins**
 
 Joins combine data from multiple tables based on related columns.
 
@@ -83,7 +83,7 @@ DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRankValue
 
 FROM Employees;
 
-**6\. LAG() Function**
+## **6\. LAG() Function**
 
 The LAG() function accesses data from a previous row within a result set.
 
@@ -95,7 +95,7 @@ LAG(Salary, 1, 0) OVER (ORDER BY Salary DESC) AS PreviousSalary
 
 FROM Employees;
 
-**7\. UNION and UNION ALL**
+## **7\. UNION and UNION ALL**
 
 These operators combine the results of multiple SELECT queries.
 
@@ -105,7 +105,7 @@ These operators combine the results of multiple SELECT queries.
 
 SELECT \* FROM EmployeesIndia
 
-UNION
+### UNION
 
 SELECT \* FROM EmployeesUSA;
 
