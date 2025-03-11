@@ -215,7 +215,7 @@ python3 temp.py
 
 ## 7. Opening the SQLite Database
 ```sh
-sqlite3 /home/ganesh/databases/data.db
+sqlite3 /home/databases/data.db
 ```
 - Opens the SQLite shell and connects to the `data.db` database.
 
@@ -258,13 +258,13 @@ pip3 install --break-system-packages sqlalchemy
 
 ## 13. Running Python Script Again
 ```sh
-python3 /home/ganesh/basic-module/numerical/temp.py
+python3 /home/basic-module/numerical/temp.py
 ```
 - Runs `temp.py` to create/update the database tables and insert data.
 
 ## 14. Reopening SQLite and Checking Tables
 ```sh
-sqlite3 /home/ganesh/databases/data.db
+sqlite3 /home/databases/data.db
 .tables
 ```
 - Ensures all tables (`book`, `posts`, `users`) are still present.
@@ -374,7 +374,7 @@ pip3 install --break-system-packages sqlalchemy
 
 ## 13. Running Python Script Again
 ```sh
-python3 /home/ganesh/basic-module/numerical/temp.py
+python3 /home/basic-module/numerical/temp.py
 ```
 - Runs `temp.py` to create/update the database tables and insert data.
 
