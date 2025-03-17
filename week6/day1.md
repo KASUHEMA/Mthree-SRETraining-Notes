@@ -106,6 +106,7 @@ chmod +x get_helm.sh
 7. In label filters, select **namespace** and give **sample-app** there. In **Line Contains** tab, give the word **ERROR**.
 <img width="527" alt="image" src="https://github.com/user-attachments/assets/6f17efe3-70f5-4d82-82e3-3133529d71f9" />
 <img width="949" alt="image" src="https://github.com/user-attachments/assets/6329b790-6202-4b40-ae96-622a1c15325a" />
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/493c302b-9749-4fe4-bc2d-bd3b7daf6a2c" />
 
 ## Creating CPU Usage Panel
 1. Select **Prometheus** as a data source.
@@ -127,4 +128,3 @@ sum(count_over_time({namespace="sample-app"}[5m])) by (pod_name)
 3. Configured dashboard settings and saved the dashboard.
 4. Dashboard now shows 3 panels.
 
-<img width="950" alt="image" src="https://github.com/user-attachments/assets/493c302b-9749-4fe4-bc2d-bd3b7daf6a2c" />
