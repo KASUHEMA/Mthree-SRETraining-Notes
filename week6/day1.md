@@ -128,3 +128,4 @@ sum(count_over_time({namespace="sample-app"}[5m])) by (pod_name)
 3. Configured dashboard settings and saved the dashboard.
 4. Dashboard now shows 3 panels.
 
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/493c302b-9749-4fe4-bc2d-bd3b7daf6a2c" />
