@@ -105,13 +105,12 @@ chmod +x get_helm.sh
 6. Set the panel title and click on apply.
 7. In label filters, select **namespace** and give **sample-app** there. In **Line Contains** tab, give the word **ERROR**.
 <img width="527" alt="image" src="https://github.com/user-attachments/assets/6f17efe3-70f5-4d82-82e3-3133529d71f9" />
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/6329b790-6202-4b40-ae96-622a1c15325a" />
 
 ## Creating CPU Usage Panel
 1. Select **Prometheus** as a data source.
 2. Switch from builder to code mode.
 3. Execute the below query:
-   <img width="949" alt="image" src="https://github.com/user-attachments/assets/6329b790-6202-4b40-ae96-622a1c15325a" />
-
 ```promql
 sum(rate(container_cpu_usage_seconds_total{namespace="sample-app"}[5m])) by (pod)
 ```
