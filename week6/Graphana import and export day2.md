@@ -130,5 +130,29 @@ Practiced with these examples in my Grafana instance to get comfortable with bot
 <img width="953" alt="image" src="https://github.com/user-attachments/assets/17960f96-f535-448e-9264-6938b46848d6" />
 ![Dashboard](https://github.com/user-attachments/assets/fe5ebf96-113d-4d5d-bf57-ae033557ac4f)
 ![Dashboard](https://github.com/user-attachments/assets/7f0474e3-2bde-4667-afe6-8eead5211da9)
+## Steps to Import a Dashboard
 
+   1.Click on + and select Import Dashboard.
+   
+   2.Paste the JSON code for the dashboard.
+   
+   3.Upload the code and click on Load.
+   
+   4.The dashboard will display the configured panels.
+<img width="553" alt="image" src="https://github.com/user-attachments/assets/9dd726c6-23e5-47a8-874b-14276edbb25c" />
+<img width="487" alt="image" src="https://github.com/user-attachments/assets/88a84dd9-3615-4333-9295-f338ad1fcb5a" />
+
+## Steps to Export a Dashboard
+   
+   1.Open the dashboard you want to export.
+   
+   2.Click on the Share icon (usually located in the top-right corner).
+   
+   3.Select the Export tab.
+   
+   4.Click Save JSON to download the dashboard configuration as a JSON file.
+
+You can now share or import this JSON file into another Grafana instance.
+<img width="484" alt="image" src="https://github.com/user-attachments/assets/fce9e81a-3e7b-42d8-9c57-40435f81473a" />
+<img width="273" alt="image" src="https://github.com/user-attachments/assets/13dd2e20-7bcc-4b9c-82b8-01fb6ac2dd41" />
 
