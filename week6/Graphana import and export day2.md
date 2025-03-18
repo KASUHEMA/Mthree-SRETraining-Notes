@@ -8,6 +8,32 @@
 4. The dashboard will display the configured panels.
 
 ## Learning Prometheus and Loki Queries for Grafana
+# Prometheus and Loki Basics for Grafana
+
+## Prometheus Basics
+
+- **Purpose**: A time-series database for monitoring and alerting.
+- **Data Collection**: Pulls metrics via HTTP endpoints.
+- **Storage**: Stores time-series data efficiently using a custom TSDB (Time Series Database).
+- **Querying**: Uses PromQL to retrieve and analyze data.
+- **Use Case**: Best for tracking application and infrastructure metrics (e.g., CPU, memory, request count).
+
+## Loki Basics
+
+- **Purpose**: A log aggregation system designed to work with Grafana.
+- **Data Collection**: Ingests logs from applications but does not index the log content (only labels).
+- **Querying**: Uses LogQL to filter, parse, and analyze logs.
+- **Use Case**: Best for troubleshooting and correlating logs with metrics.
+
+## Differences Between Prometheus and Loki
+
+| Feature           | Prometheus                               | Loki                                      |
+|-------------------|------------------------------------------|-------------------------------------------|
+| **Data Type**     | Metrics (time-series)                    | Logs                                      |
+| **Query Language**| PromQL                                   | LogQL                                     |
+| **Storage**       | Custom TSDB                              | Label-based log storage                  |
+| **Indexing**      | Indexes all time-series data             | Only indexes labels, not log content     |
+| **Use Case**      | Application & infra monitoring           | Log aggregation & debugging              |
 
 ### Prometheus Basics
 
