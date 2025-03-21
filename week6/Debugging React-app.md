@@ -221,10 +221,8 @@ This ensures that all updates take effect properly and the React SRE application
 <img width="608" alt="image" src="https://github.com/user-attachments/assets/987c5cfa-a906-4644-ba99-09f1f9009cd7" />
 
 ## React-app
-<img width="347" alt="image" src="https://github.com/user-attachments/assets/4fcf444e-3f42-481f-920a-6adec9855027" />
-
 <img width="902" alt="image" src="https://github.com/user-attachments/assets/d63281d1-7ac2-4533-b4e7-54e9025883b8" />
-
+<img width="347" alt="image" src="https://github.com/user-attachments/assets/4fcf444e-3f42-481f-920a-6adec9855027" />
 <img width="304" alt="image" src="https://github.com/user-attachments/assets/c49433b7-013f-45ba-84b0-e747c2328370" />
 
 ## prometheus
