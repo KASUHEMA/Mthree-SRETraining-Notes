@@ -227,6 +227,7 @@ This ensures that all updates take effect properly and the React SRE application
 
 ## prometheus
 <img width="952" alt="image" src="https://github.com/user-attachments/assets/16c95e5e-40bb-4b3d-af00-46de07a30617" />
+![image](https://github.com/user-attachments/assets/5ae7f8c4-aaf7-4d38-9785-a7332e4e5e57)
 
 ## Graphana 
 ![image](https://github.com/user-attachments/assets/e63fe0d3-af3f-4e96-aae2-3911241782df)
