@@ -77,50 +77,47 @@ The system is modeled with 36 tables in total:
 
 ---
 
-## 🚀 Step-by-Step Deployment Guide
+🚀 Step-by-Step Deployment Guide
 
-## Step 1: Login to DockerHub
+This section previously included terminal commands for deploying the application using Docker and Kubernetes. For clarity and simplicity, we are presenting a high-level overview of the deployment steps:
 
-## Step 2: Build Docker Image
+Deployment Flow Overview
 
-## Step 3: Run Docker Container
-## Step 4: If Container Already Exists, Remove It
-## Step 5: Check Service Endpoints
-- Django: http://localhost:8000
-- Metrics: http://localhost:8000/metrics
-- React: http://localhost:3000
+Docker Image Preparation
 
-## Step 6: Tag & Push Docker Image
+Login to DockerHub
 
+Build and tag the Docker image
 
-## Step 7: Reset & Start Minikube
+Push the image to DockerHub repository
 
+Run the Application Locally with Docker
 
-## Step 8: Deploy Kubernetes Resources
+Run the backend (Django) and frontend (React) containers
 
-## Step 9: Create Monitoring Namespace
+Ensure services are accessible via browser (localhost ports)
 
-## Step 10: Port-Forward Django and React Services
+Kubernetes Cluster Setup with Minikube
 
+Start/reset Minikube cluster
 
-## Step 11: Port-Forward Redis Exporter
+Deploy Kubernetes manifests (YAML files)
 
+Expose services and verify pods
 
-## Step 12: Deploy Prometheus
+Monitoring Stack Installation
 
-## Step 13: Deploy Grafana
+Create a dedicated monitoring namespace
 
+Deploy Redis Exporter
 
-## Step 14: Get Node Info and Service Details
+Deploy Prometheus and Grafana
 
+Port-forward services for local access
 
-## Step 15: Access the Application
-- NodePort example: `http://<node-ip>:30008`
-- Prometheus: `http://localhost:9090`
-- Grafana: `http://localhost:3030`
+Access Services via Browser
 
----
-
+Access NodePort, Prometheus, and Grafana UIs
 ## 🔧 Site Reliability Engineering (SRE) Tools Used
 - **Docker**: Containerization of app components.
 - **Kubernetes**: Cluster orchestration for scaling and reliability.
