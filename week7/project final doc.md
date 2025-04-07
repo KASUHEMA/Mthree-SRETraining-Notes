@@ -77,6 +77,44 @@ The system is modeled with 36 tables in total:
 
 ---
 
+## 🏗️ System Architecture
+
+The architecture of the Banking System is designed to be modular and scalable, composed of multiple interacting layers and services:
+
+### **1. Frontend Layer**
+- Built using **ReactJS**
+- Communicates with the backend through REST APIs
+- Responsible for user interaction and UI rendering
+
+### **2. Backend Layer**
+- Developed with **Django (Python)**
+- Handles business logic and database operations
+- Includes API endpoints, authentication, and transaction processing
+
+### **3. Celery Workers**
+- Used for background processing (e.g., sending emails, logs)
+- Task queue powered by **Redis**
+
+### **4. Database Layer**
+- **PostgreSQL** stores structured banking data
+- Tables include customer, account, transaction, logs, etc.
+
+### **5. Monitoring & Observability**
+- **Prometheus** scrapes metrics from Django and Redis
+- **Grafana** visualizes real-time data and system health
+
+### **6. CI/CD Pipeline**
+- **Jenkins** automates build, test, and deployment
+- Integrated with GitHub and DockerHub
+
+### **7. Containerization & Orchestration**
+- **Docker** used to containerize each service (frontend, backend, workers)
+- **Kubernetes** orchestrates services and manages deployments, networking, scaling
+
+![System Architecture Diagram](system-architecture.png)
+
+---
+
 ## 🚀 Step-by-Step Deployment Guide
 
 This section previously included terminal commands for deploying the application using Docker and Kubernetes. For clarity and simplicity, we are presenting a high-level overview of the deployment steps:
