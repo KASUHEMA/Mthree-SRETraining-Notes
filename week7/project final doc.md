@@ -10,14 +10,14 @@ The goal is to design and implement a comprehensive **Banking System** that enab
 
 ---
 
-## 📊 ER Diagram
+## 📈 ER Diagram
 
 The system is modeled with 36 tables in total:
 - **20 application tables** for customer, account, transactions, etc.
 - **6 Celery-related tables** for background task processing.
 - **10 Django internal tables** for admin, auth, sessions, etc.
 
-![Schema 1](https://github.com/user-attachments/assets/ed28df99-fad8-45ba-861c-11f808df8655)
+![Schema 1](https://github.com/user-attachments/assets/9fc32c38-d287-471c-935d-54032c100d9b)
 
 ---
 
@@ -77,47 +77,37 @@ The system is modeled with 36 tables in total:
 
 ---
 
-🚀 Step-by-Step Deployment Guide
+## 🚀 Step-by-Step Deployment Guide
 
 This section previously included terminal commands for deploying the application using Docker and Kubernetes. For clarity and simplicity, we are presenting a high-level overview of the deployment steps:
 
-Deployment Flow Overview
+### Deployment Flow Overview
 
-Docker Image Preparation
+1. **Docker Image Preparation**
+   - Login to DockerHub
+   - Build and tag the Docker image
+   - Push the image to DockerHub repository
 
-Login to DockerHub
+2. **Run the Application Locally with Docker**
+   - Run the backend (Django) and frontend (React) containers
+   - Ensure services are accessible via browser (localhost ports)
 
-Build and tag the Docker image
+3. **Kubernetes Cluster Setup with Minikube**
+   - Start/reset Minikube cluster
+   - Deploy Kubernetes manifests (YAML files)
+   - Expose services and verify pods
 
-Push the image to DockerHub repository
+4. **Monitoring Stack Installation**
+   - Create a dedicated monitoring namespace
+   - Deploy Redis Exporter
+   - Deploy Prometheus and Grafana
+   - Port-forward services for local access
 
-Run the Application Locally with Docker
+5. **Access Services via Browser**
+   - Access NodePort, Prometheus, and Grafana UIs
 
-Run the backend (Django) and frontend (React) containers
+---
 
-Ensure services are accessible via browser (localhost ports)
-
-Kubernetes Cluster Setup with Minikube
-
-Start/reset Minikube cluster
-
-Deploy Kubernetes manifests (YAML files)
-
-Expose services and verify pods
-
-Monitoring Stack Installation
-
-Create a dedicated monitoring namespace
-
-Deploy Redis Exporter
-
-Deploy Prometheus and Grafana
-
-Port-forward services for local access
-
-Access Services via Browser
-
-Access NodePort, Prometheus, and Grafana UIs
 ## 🔧 Site Reliability Engineering (SRE) Tools Used
 - **Docker**: Containerization of app components.
 - **Kubernetes**: Cluster orchestration for scaling and reliability.
@@ -130,4 +120,5 @@ Access NodePort, Prometheus, and Grafana UIs
 ## ✅ Conclusion
 This comprehensive Banking System enables secure, scalable financial operations and includes monitoring capabilities for high reliability. The architecture supports modern DevOps and SRE practices, ensuring production-readiness and observability.
 
+*Next: Add Kubernetes architecture diagram once the image is shared.*
 
