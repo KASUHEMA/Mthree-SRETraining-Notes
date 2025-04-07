@@ -109,7 +109,7 @@ The architecture of the Banking System is designed to be modular and scalable, c
 - **Docker** used to containerize each service (frontend, backend, workers)
 - **Kubernetes** orchestrates services and manages deployments, networking, scaling
 
-![System Architecture Diagram](system-architecture.png)
+<img width="611" alt="image" src="https://github.com/user-attachments/assets/e3c2321e-6d3f-42a9-adfc-0a8ee3f279b3" />
 
 ---
 ##💡 Why This Project?
