@@ -79,86 +79,42 @@ The system is modeled with 36 tables in total:
 
 ## 🚀 Step-by-Step Deployment Guide
 
-### Step 1: Login to DockerHub
-```bash
-docker login
-```
+## Step 1: Login to DockerHub
 
-### Step 2: Build Docker Image
-```bash
-docker build -t bankingsystem .
-```
+## Step 2: Build Docker Image
 
-### Step 3: Run Docker Container
-```bash
-docker run -d -p 8000:8000 -p 3000:3000 --name banking-system bankingsystem
-```
-
-### Step 4: If Container Already Exists, Remove It
-```bash
-docker rm -f banking-system
-```
-
-### Step 5: Check Service Endpoints
+## Step 3: Run Docker Container
+## Step 4: If Container Already Exists, Remove It
+## Step 5: Check Service Endpoints
 - Django: http://localhost:8000
 - Metrics: http://localhost:8000/metrics
 - React: http://localhost:3000
 
-### Step 6: Tag & Push Docker Image
-```bash
-docker tag <image_name> <your_dockerhub_username>/bankingsystem:v1
-docker push <your_dockerhub_username>/bankingsystem:v1
-```
+## Step 6: Tag & Push Docker Image
 
-### Step 7: Reset & Start Minikube
-```bash
-minikube delete
-minikube start
-```
 
-### Step 8: Deploy Kubernetes Resources
-```bash
-kubectl apply -f k8s/
-kubectl get pods
-```
+## Step 7: Reset & Start Minikube
 
-### Step 9: Create Monitoring Namespace
-```bash
-kubectl create namespace monitoring
-```
 
-### Step 10: Port-Forward Django and React Services
-```bash
-kubectl port-forward svc/django-service 8000:8000
-kubectl port-forward svc/react-service 3000:3000
-```
+## Step 8: Deploy Kubernetes Resources
 
-### Step 11: Port-Forward Redis Exporter
-```bash
-kubectl port-forward svc/redis-exporter 9121:9121
-```
+## Step 9: Create Monitoring Namespace
 
-### Step 12: Deploy Prometheus
-```bash
-kubectl apply -f prometheus/
-kubectl get pods -n monitoring
-kubectl port-forward svc/prometheus -n monitoring 9090:9090
-```
+## Step 10: Port-Forward Django and React Services
 
-### Step 13: Deploy Grafana
-```bash
-kubectl apply -f Grafana/
-kubectl get pods -n monitoring
-kubectl port-forward svc/grafana -n monitoring 3030:3000
-```
 
-### Step 14: Get Node Info and Service Details
-```bash
-kubectl get nodes -o wide
-kubectl get services
-```
+## Step 11: Port-Forward Redis Exporter
 
-### Step 15: Access the Application
+
+## Step 12: Deploy Prometheus
+
+## Step 13: Deploy Grafana
+
+
+## Step 14: Get Node Info and Service Details
+
+
+## Step 15: Access the Application
 - NodePort example: `http://<node-ip>:30008`
 - Prometheus: `http://localhost:9090`
 - Grafana: `http://localhost:3030`
@@ -177,5 +133,4 @@ kubectl get services
 ## ✅ Conclusion
 This comprehensive Banking System enables secure, scalable financial operations and includes monitoring capabilities for high reliability. The architecture supports modern DevOps and SRE practices, ensuring production-readiness and observability.
 
-*Next: Add Kubernetes architecture diagram once the image is shared.*
 
