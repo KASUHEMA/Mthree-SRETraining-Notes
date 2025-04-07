@@ -1,6 +1,4 @@
-# 📓 Banking System - Project Documentation
 
----
 
 ## 🔍 Problem Statement
 
@@ -114,7 +112,7 @@ The architecture of the Banking System is designed to be modular and scalable, c
 ![System Architecture Diagram](system-architecture.png)
 
 ---
-# 💡 Why This Project?
+##💡 Why This Project?
 
 In today's digital-first world, banking systems require high performance, security, and scalability. Traditional banking software often lacks real-time responsiveness, modularity, and integration with modern DevOps practices. This project aims to bridge that gap by providing a robust solution using modern technologies like Django, React, Docker, and Kubernetes.
 
@@ -190,6 +188,19 @@ This section previously included terminal commands for deploying the application
    - Access NodePort, Prometheus, and Grafana UIs
 
 ---
+## Grafana Dashboard
+![IMG-20250407-WA0033](https://github.com/user-attachments/assets/a33a0247-92ce-4064-bd81-56140e956162)<br><br>
+
+![IMG-20250407-WA0032](https://github.com/user-attachments/assets/a04a3d0c-981e-448a-a3eb-22f80b63a22c)<br><br>
+
+![IMG-20250407-WA0031](https://github.com/user-attachments/assets/0bf02d08-d1e8-46cf-bafd-4721dcb7e92e)<br><br>
+![IMG-20250407-WA0030](https://github.com/user-attachments/assets/88198a28-9fe3-4759-bec3-4fe10a68c63c)<br><br>
+![IMG-20250407-WA0034](https://github.com/user-attachments/assets/2454c2e7-8deb-409e-b935-3787a9753e53)<br><br>
+![IMG-20250407-WA0037](https://github.com/user-attachments/assets/e6472861-da04-4425-83d5-2148793cf29c)<br><br>
+![IMG-20250407-WA0036](https://github.com/user-attachments/assets/4d5ed877-6116-4ce4-9951-12a1af5c6aeb)<br><br>
+![IMG-20250407-WA0035](https://github.com/user-attachments/assets/ee8b0db4-4dac-46bb-bb86-5c25ca6b4d97)<br><br>
+![IMG-20250407-WA0038](https://github.com/user-attachments/assets/d7587e74-3f96-4488-a1a9-9e2425446dda)<br><br>
+![IMG-20250407-WA0039](https://github.com/user-attachments/assets/7e4103f3-a516-4706-8f59-6bf5dd83e886)<br><br>
 
 ## 🔧 Site Reliability Engineering (SRE) Tools Used
 - **Docker**: Containerization of app components.
